@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>P&aacute;gina Web Mundial Brasil 2014 </title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	</head>
+	<body  style="background-attachment: fixed; background-repeat: no-repeat; background-position:top center;" background="images/fondo.jpg" >
+	<form name="resultadosForm" method="post" action="guardar.php">	
+		<table border="1" align="center" class="menu">
+			<tr>
+				<th><a href="lista_equipos.html">Lista de equipos</a></th>
+				<th><a href="calendario_resultados.html">Calendario y resultados</a></th>
+				<th><a href="tabla_grupos.html">Tabla de grupos</a></th>
+			</tr>
+			<tr>
+				<th><a href="goleo_individual.html">Goleo individual</a></th>
+				<th><a href="goleo_equipos.html">Goleo por equipos</a></th>
+				<th><a href="estadisticas.html">Estad&iacute;sticas</a></th>
+			</tr>
+			<tr>
+				<th><a href="index.html">Inicio</a></th>
+				<th><a href="noticias.html">Noticias</a></th>
+				<th><a href="captura.html">Captura de resultados</a></th>
+			</tr>
+			<tr>
+				<th><a href="registro_equipo.html">Registrar equipo</a></th>
+				<th><a href="registro_jugador.html">Registrar jugador</a></th>
+			</tr>
+		</table>	
+		<table border="2" align="center">
+			<caption><h2>Captura de resultados</h2></caption>
+			<tr>
+				<th>Fecha</th>
+				<th>Equipo Local</th>
+				<th>Marcador</th>
+				<th>Equipo Visitante</th>
+			</tr>	
+			<tr align="center">
+				<td>23/Junio/2014</td>
+				<td>
+					<img width="80" height="80" src="images/croacia.png" /> <br/>Croacia
+				</td>
+				<td>
+					<input type="text" name="equipo1_local" value="" style="width:30px;" /> :
+					<input type="text" name="equipo2_visitante" value="" style="width:30px;" />
+				</td>
+				<td>
+					<img width="80" height="80" src="images/mexico.png" /><br/>M&eacute;xico
+				</td>
+			</tr>
+
+			<tr align="center">
+				<td>23/Junio/2014</td>
+				<td>
+					<img width="80" height="80" src="images/alemania.png" /> <br/>Alemania
+				</td>
+				<td>
+					<input type="text" name="equipo3_local" value="" style="width:30px;" /> :
+					<input type="text" name="equipo4_visitante" value="" style="width:30px;" />
+				</td>
+				<td>
+					<img width="80" height="80" src="images/usa.png" /><br/>Estados Unidos
+				</td>
+			</tr>
+
+
+			<tr align="center">
+				<td>23/Junio/2014</td>
+				<td>
+					<select name="equipo1_local">
+						<option value=""></option>
+						<option value="mx">M&eacute;xico</option>
+						<option value="br">Brasil</option>
+					</select>
+					<img width="80" height="80" src="images/alemania.png" />
+
+				</td>
+				<td>
+					<input type="text" name="equipo1_local" value="" style="width:30px;" /> :
+					<input type="text" name="equipo2_visitante" value="" style="width:30px;" />
+				</td>
+				<td>
+					<select name="equipo2_visitante">
+						<option value=""></option>
+						<option value="mx">M&eacute;xico</option>
+						<option value="br">Brasil</option>
+					</select>
+					<img width="80" height="80" src="images/usa.png" /><br/>
+				</td>
+			</tr>
+s
+			<tr>
+				<td align="right" colspan="4">
+					<input type="submit" name="Guardar" value="Guardar"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</body>
+</html>

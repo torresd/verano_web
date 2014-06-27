@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>P&aacute;gina Web Mundial Brasil 2014 </title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	</head>
+	<body>
+		<table border="1" align="center" class="menu">
+			<tr>
+				<th><a href="lista_equipos.html">Lista de equipos</a></th>
+				<th><a href="calendario_resultados.html">Calendario y resultados</a></th>
+				<th><a href="tabla_grupos.html">Tabla de grupos</a></th>
+			</tr>
+			<tr>
+				<th><a href="goleo_individual.html">Goleo individual</a></th>
+				<th><a href="goleo_equipos.html">Goleo por equipos</a></th>
+				<th><a href="estadisticas.html">Estad&iacute;sticas</a></th>
+			</tr>
+			<tr>
+				<th><a href="index.html">Inicio</a></th>
+				<th><a href="noticias.html">Noticias</a></th>
+				<th><a href="captura.html">Captura de resultados</a></th>
+			</tr>
+			<tr>
+				<th><a href="registro_equipo.html">Registrar equipo</a></th>
+				<th><a href="registro_jugador.html">Registrar jugador</a></th>
+			</tr>
+		</table>
+
+		<div align="center">
+			<img width="50%" height="50%" src="images/fuleco.jpg"/>
+		</div>
+		<form method="POST" action="">
+			<table border="2" align="center">
+				<caption><h2>Registro del jugador</h2></caption>
+				<tr>
+					<td><label for="id_nombre">Nombre</label></td>
+					<td><input type="text" id="id_nombre" name="id_nombre" required></td>
+				</tr>
+				<tr>
+					<td><label for="id_apaterno">Apellido paterno</label></td>
+					<td><input type="text" id="id_apaterno" name="id_apaterno" required></td>
+				</tr>
+				<tr>
+					<td><label for="id_amaterno">Apellido materno</label></td>
+					<td><input type="text" id="id_amaterno" name="id_amaterno" required></td>
+				</tr>
+				<tr>
+					<td><label for="id_edad">Edad</label></td>
+					<td><input type="text" id="id_edad" name="id_edad" required></td>
+				</tr>
+				<tr>
+					<td><label for="id_estatura">Estatura</label></td>
+					<td><input type="text" id="id_estatura" name="id_estatura" required></td>
+				</tr>
+				<tr>
+					<td><label for="id_posicion">Posici&oacute;n</label></td>
+					<td><select id="id_posicion" name="id_posicion">
+						<option value=""></option>		
+						<option value="por">Portero</option>
+						<option value="def">Defensa</option>
+						<option value="med">Medio</option>
+						<option value="del">Delantero</option>
+					</select required></td>
+				</tr>
+				<tr>
+					<td><label for="id_dorsal">Dorsal</label></td>
+					<td><input type="text" id="id_dorsal" name="id_dorsal" required></td>
+				</tr>
+				<tr>
+					<td><label for="id_club">Club</label></td>
+					<td><input type="text" id="id_club" name="id_club" required></td>
+				</tr>
+				<tr>
+					<td><label for="id_pais">Pa&iacute;s</label></td>
+					<td><select id="id_pais" name="id_pais">
+						<option value=""></option>		
+						<option value="ale">Alemania</option>
+						<option value="bra">Brasil</option>
+						<option value="col">Colombia</option>
+						<option value="ecu">Ecuador</option>
+						<option value="esp">Espa&ntilde;a</option>
+						<option value="usa">Estados Unidos</option>
+						<option value="frn">Francia</option>
+						<option value="mex">M&eacute;xico</option>
+					</select required></td>
+				</tr>
+				<tr>
+					<td><label for="id_foto">Fotograf&iacute;a</label></td>
+					<td><input type="file" id="id_foto" name="id_foto" required></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Guardar"></td>
+				</tr>
+				</table>
+		</form>
+	</body>
+</html>
