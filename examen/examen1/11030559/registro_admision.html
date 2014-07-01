@@ -1,0 +1,158 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		<title>Examen 1 Formularios</title>
+	</head>
+	<body>
+	<br><br><br><br>
+		<table border="0" align="center" class="menu" wight="30%">
+			<tr>
+				<th><a href="establecer_cuenta.html">&nbsp;&nbsp;Establecer una Cuenta&nbsp;&nbsp;</a></th>
+				<th><a href="registro_admision.html">&nbsp;&nbsp;Registro de admisi&oacute;n&nbsp;&nbsp;</a></th>
+				<th><a href="index.html">&nbsp;&nbsp;Inicio&nbsp;&nbsp;</a></th>
+			</tr>
+		</table>	
+		<br>
+		<h2>Registro de admisi&oacute;n</h2>
+		<br>
+		<label class="titulo2">Campos con&nbsp; <label class="id_texto_rojo">*&nbsp;</label>son requeridos</label>
+		<form method="post" action="" align="left">
+			<label class="titulo3">Datos Personales</label>
+			<br>
+			<label class="titulo2" for="id_nombre">Nombre:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="id_nombre" name="id_nombre" required>
+			<br>
+			<label class="titulo2" for="id_apell_pat">Apellido paterno:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="id_apell_pat" name="id_apell_pat" required>
+			<br>
+			<label class="titulo2" for="id_apell_mat">Apellido materno:&nbsp;</label>
+			<br>
+			<input type="text" id="id_apell_mat" name="id_apell_mat">
+			<br>
+			<label class="titulo2" for="fecha_nac">Fecha de nacimiento:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="fecha_nac" name="fecha_nac" required>
+			<br>
+			<label  class="titulo2" for="id_genero">Sexo:<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<select id="id_genero" required>
+				<option value="">Selecciona</option>
+				<option value="fem">Femenino</option>
+				<option value="mas">Masculino</option>
+			</select>
+			<br>
+			<label class="titulo2" for="curp">Curp:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="curp" name="curp" required>
+			<input align="rigth" type="submit" value="Consulta de CURP">	
+			<br>
+			<label  class="titulo2" for="id_edo_civil">Estado Civil:<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<select id="id_edo_civil" required>
+				<option value="">Selecciona</option>
+				<option value="cas">Casado(a)</option>
+				<option value="sol">Soltero(a)</option>
+				<option value="div">Divorciado(a)</option>
+			</select>
+			<br>	
+		</form>
+		<form method="post" action="" align="left">
+			<label class="titulo3">Datos de contacto</label>
+			<br>
+			<label class="titulo2" for="id_calle">Calle:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="id_calle" name="id_calle" required>
+			<br>
+			<label class="titulo2" for="id_numero">Numero:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="id_numero" name="id_numero" required>
+			<br>
+			<label class="titulo2" for="id_colonia">Colonia:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="id_colonia" name="id_colonia" requiered>
+			<br>
+			<label class="titulo2" for="id_localidad">Localidad:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="id_localidad" name="id_localidad" required>
+			<br>
+			<label class="titulo2" for="codigo_postal">Codigo postal:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="codigo_postal" name="codigo_postal" required>	
+			<br>
+			<label class="titulo2" for="id_telefono">Telefono:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="id_telefono" name="id_telefono" required>
+			<br>
+			<label class="titulo2" for="correo_electronico">Correo electronico:&nbsp;<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="correo_electronico" name="correo_electronico" required>	
+			<br>
+				
+		</form>
+		<form method="post" action="" align="left">
+			<label class="titulo3">Lugar de nacimiento</label>
+			<br>
+			<label  class="titulo2" for="id_pais">Pais:</label>
+			<br>
+			<select id="id_pais" required>
+				<option value=""></option>
+			</select>
+			<br>
+			<label  class="titulo2" for="id_estado">Estado:</label>
+			<br>
+			<select id="id_estado" required>
+				<option value=""></option>
+			</select>
+			<br>
+			<label  class="titulo2" for="id_municipio">Municipio:<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<select id="id_municipio" required>
+				<option value=""></option>
+			</select>
+			<br>	
+		</form>
+		<form method="post" action="" align="left">
+			<label class="titulo3">Especialidad a cursar</label>
+			<br>
+			<label  class="titulo2" for="id_especialidad">Especialidad:<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<select id="id_especialidad" required>
+				<option value="">Seleccione</option>
+			</select>
+		</form>
+			<form method="post" action="" align="left">
+			<label class="titulo3">Lugar donde realizo sus estudios</label>
+			<br>
+			<label  class="titulo2" for="id_estado2">Estado:</label>
+			<br>
+			<select id="id_estado2">
+				<option value="">Selecciona</option>
+			</select>
+			<br>
+			<label  class="titulo2" for="id_municipio2">Municipio:</label>
+			<br>
+			<input type="text" id="id_municipio2" name="id_municipio2">
+			<br>
+			<label  class="titulo2" for="id_esc_proc">Escuela de procedencia:<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="id_esc_proc" name="id_esc_proc">
+			<br>
+			<label  class="titulo2" for="id_prom_brach">Promedio bachillerato:<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<input type="text" id="id_prom_brach" name="id_prom_brach">
+			<br>	
+		</form>
+			<label  class="titulo2" for="id_tipo_fiinan">Tipo de financiamiento:<label class="id_texto_rojo">*&nbsp;</label></label>
+			<br>
+			<select id="id_tipo_fiinan">
+				<option value="">Selecciona</option>
+			</select>
+			<br>
+			<br>
+			<label  class="titulo2" for="id_tipo_fiinan">Estoy de acuerdo con la informacion proporcionada ....</label>
+			<br>
+			<input align="rigth" type="submit" value="Aceptar">	
+	</body>
+</html>

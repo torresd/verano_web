@@ -1,0 +1,7 @@
+
+.body{
+	background-image: url("../images/imag.jpg");
+	/*background-repeat:no-repeat;*/ /*Para indicar q no se repita la imagen*/
+	background-size: 100% auto;
+}
+

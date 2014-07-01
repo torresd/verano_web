@@ -1,0 +1,12 @@
+body{
+	background-image: url("../images/fondo.jpg");
+	/*../*/
+	/*background-repeat:no-repeat;*/
+	background-size: 100%auto;
+}
+
+.menus {
+	border: 1px solid #000000;
+	background-color: #F7EC3C;
+}
+

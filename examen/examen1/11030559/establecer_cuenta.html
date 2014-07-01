@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		<title>Examen 1 Formularios</title>
+	</head>
+	<body>
+	<br><br><br><br>
+		<table border="0" align="center" class="menu" wight="30%">
+			<tr>
+				<th><a href="establecer_cuenta.html">&nbsp;&nbsp;Establecer una Cuenta&nbsp;&nbsp;</a></th>
+				<th><a href="registro_admision.html">&nbsp;&nbsp;Registro de admisi&oacute;n&nbsp;&nbsp;</a></th>
+				<th><a href="index.html">&nbsp;&nbsp;Inicio&nbsp;&nbsp;</a></th>
+			</tr>
+		</table>	
+		<br>
+		<h2>Establecer una Cuenta</h2>
+		<br>
+		<form method="post" action="" align="left">
+			<label class="titulo" for="id_usuario">Cree un nombre de Usuario:&nbsp;</label>
+			<input type="text" id="id_usuario" name="id_usuario" required>
+			<label class="id_texto_rojo">Nota:&nbsp;</label>
+			<label class="id_texto_normal">Los Nombres de usuario son importantes...&nbsp;&nbsp;</label>
+			<a href="">Haga click aqu&iacute; para saber sobre estos detalles.</a>
+			<br>
+			<label  class="titulo" for="id_password">Cree una contrase&ntilde;a:&nbsp;</label>
+			<input type="password" id="id_password" name="id_password" required>
+			<br>
+			<label  class="titulo" for="id_password2">Reingrese su contrase&ntilde;a:&nbsp;</label>
+			<input type="password" id="id_password2" name="id_password2" required>
+			<br>
+			<br>
+			<label class="titulo" for="id_saludo">Saludo:&nbsp;</label>
+			<select id="id_saludo" required>
+				<option value=""></option>
+				<option value="sr">Sr.</option>
+				<option value="sra">Sra.</option>
+			</select>
+			<br>
+			<label  class="titulo" for="id_nombre">Nombre:&nbsp;</label>
+			<input type="text" id="id_nombre" name="id_nombre" required>
+			<br>
+			<label  class="titulo" for="id_apellido">Apellido:&nbsp;</label>
+			<input type="text" id="id_apellido" name="id_apellido" required>
+			<br>
+			<br>
+			<label  class="titulo" for="id_email">Correo electr&oacute;nico de preferencia:&nbsp;</label>
+			<input type="text" id="id_email" name="id_email" required>
+			<label class="id_texto_rojo">Nota:&nbsp;</label>
+			<label class="id_texto_normal">Por favor ingrese un correo electr&oacute;nico  vigente. Si desea, puede cambiar esta informacion mas adelante, si decide utilizar otro correo electr&oacute;nico en</label>
+			<br>
+			<label  class="titulo" for="id_email2">Reingrese el correo electr&oacute;nico de preferencia:&nbsp;</label>
+			<input type="text" id="id_email2" name="id_email2" required>
+			<label class="id_texto_normal">base al dominio que va a utilizar.</label>
+			<br>
+			<br>
+			<label  class="titulo" for="id_tel1">N&uacute;mero de telefono principal:&nbsp;</label>
+			<input type="text" id="id_tel1" name="id_tel1" required>
+			<label  class="titulo" for="id_ext1">&nbsp;&nbsp;Ext:&nbsp;</label>
+			<input type="text" id="id_ext1" name="id_ext1" required>
+			<label  class="titulo" for="id_tipo_tel_1">&nbsp;&nbsp;Tipo:&nbsp;</label>
+			<select id="id_tipo_tel_1" required>
+				<option value=""></option>
+				<option value="cel">Celular</option>
+				<option value="res">Residencia</option>
+				<option value="ofi">Oficina</option>
+			</select>
+			<br>
+			<label  class="titulo" for="id_tel2">N&uacute;mero de telefono secundario:&nbsp;</label>
+			<input type="text" id="id_tel2" name="id_tel2" required>
+			<label  class="titulo" for="id_ext2">&nbsp;&nbsp;Ext:&nbsp;</label>
+			<input type="text" id="id_ext2" name="id_ext2" required>
+			<label  class="titulo" for="id_tipo_tel_2">&nbsp;&nbsp;Tipo:&nbsp;</label>
+			<select id="id_tipo_tel_2" required>
+				<option value=""></option>
+				<option value="cel">Celular</option>
+				<option value="res">Residencia</option>
+				<option value="ofi">Oficina</option>
+			</select>
+			<br>
+			<br>
+			<label  class="titulo" for="id_dir_postal">Direcci&oacute;n postal:&nbsp;</label>
+			<input type="text" id="id_dir_postal" name="id_dir_postal" required>
+			<br>
+			<label  class="titulo" for="id_dir_postal2">Segunda direcci&oacute;n postal (opcional):&nbsp;</label>
+			<input type="text" id="id_dir_postal2" name="id_dir_postal2">
+			<br>
+			<label  class="titulo" for="id_ciudad">Ciudad:&nbsp;</label>
+			<input type="text" id="id_ciudad" name="id_ciudad" required>
+			<br>
+			<label  class="titulo" for="id_estado">Estado/Providencia:&nbsp;</label>
+			<input type="text" id="id_estado" name="id_estado">
+			<br>
+			<label  class="titulo" for="id_cp">Codigo postal:&nbsp;</label>
+			<input type="text" id="id_cp" name="id_cp">
+			<br>
+			<input align="rigth" type="submit" value="Guardar">		
+		</form>
+	
+	</body>
+</html>

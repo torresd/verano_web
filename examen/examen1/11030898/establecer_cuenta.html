@@ -1,0 +1,75 @@
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+	<title>Establecer una Cuenta</title>
+	</head>
+    <body>
+    	<table align="center" class="menu"> 
+    	<tr>
+        	<th><a href="establecer_cuenta.html">Establecer una Cuenta</a></th>
+        	<th><a href="registro_admicion.html">Registro de Admisi&oacute;n</a></th>        	
+        </tr>        
+    	</table>
+    	<div align="center"> 
+        <caption><h2>Establecer una Cuenta</h2></caption>  
+        <form method="post" action="">
+        	<label for="id_usuario">Cree un Nombre de Usuario:	</label>
+          		<input type="text"	id="id_usuario" name="id_usuario" required><br/>
+            <label>Nota: Los Nombres de Usuario son importantes...	<br/><br/></label>
+            <label for="id_password">Cree una Contrase&ntilde;a:	</label>
+                <input type="password"	id="id_password" name="id_password" required><br/>
+            <label for="id_password2">Reingrese su Contrase&ntilde;a:	</label>
+            	<input type="password"	id="id_password2" name="id_password2" required><br/>
+            <label for="id_saludo">Saludo:	</label>
+            	<select name="selectSaludo" >
+                <option value=""></option>
+                <option value="Sr.">Señor</option>
+                <option value="Sra.">Señora</option>
+                <option value="Srta.">Señorita</option>
+                </select><br/>
+            <label for="id_nombre">Nombre:	</label>
+            	<input type="text" id="id_nombre" name="id_nombre" required><br/>
+            <label for="id_apellido">Apellido:	</label>
+            	<input type="text" id="id_apellido" name="id_apellido" required><br/>            
+            <label for="id_email">Correo Electronico de Preferencia:	</label>
+            	<input type="email" id="id_email" name="id_email" required><br/>
+            <label for="id_email2"> Reingrese Correo Electronico de Preferencia:	</label>
+            	<input type="email" id="id_email2" name="id_email2" required><br/>
+            <label>Nota: Por favor ingrese un correo electr&oacute;nico vigente.<br/>
+            		Si desea, puede cambiar esta informaci&oacute;n mas adelante;<br/>
+                    si decide utilizar otro correo electr&oacute;nico<br/>
+                    basado en el dominio que va a registrar.<br/><br/></label>
+            <label for="id_tel">Numero de Telefono Principal:	</label>
+            	<input type="tel" id="id_tel" name="id_tel" required>
+            <label for="id_ext">	Ext:	</label>
+            	<input type="numbre" id="id_ext" name="id_ext">            
+            <label for="id_tipo">	Tipo:	</label>
+            	<select name="selectTipo" >
+                <option value=""></option>
+                <option value="Cel">Celular</option>
+                <option value="Res">Residencial</option>
+                </select><br/>
+            <label for="id_tel">Numero de Telefono Secuandario:	</label>
+            	<input type="tel" id="id_tel" name="id_tel">
+            <label for="id_ext">	Ext:	</label>
+            	<input type="number" id="id_ext" name="id_ext" >            
+            <label for="id_tipo">	Tipo:	</label>
+            	<select name="selectTipo" >
+                <option value=""></option>
+                <option value="Cel">Celular</option>
+                <option value="Res">Residencial</option>
+                </select><br/>
+            <label for="id_direccion">Direcci&oacute;n Postal:	</label>
+            	<input type="text" id="id_direccion" name="id_direccion" required><br/>
+            <label for="id_direccion2">Segunda Direcci&oacute;n Postal (Opcional):	</label>
+            	<input type="text" id="id_direccion2" name="id_direccion2"><br/>            
+            <label for="id_ciudad">Ciudad:	</label>
+            	<input type="text" id="id_ciudad" name="id_ciudad" required><br/>
+            <label for="id_estado">Estado/Provincia:	</label>
+            	<input type="text" id="id_estado" name="id_estado" required><br/>
+            <input type="submit" value="Aceptar">
+        </form>
+        </div>
+    
+	</body>
+</html>

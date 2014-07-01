@@ -1,0 +1,30 @@
+body{
+	background-image: url("../images/fondo.jpg"); 
+	background-size: 110% auto;
+	/*background-repeat: no repeat;*/
+}
+
+h1{
+	color: #65C439;
+	font-size: 18pt;
+	font-family: tahoma;
+}
+
+h2{
+	color: #65C439;
+	font-size: 16pt;
+	font-family: tahoma;
+}
+
+h4{
+	color: #323D2D;
+	font-size: 10pt;
+	font-family: tahoma;
+}
+
+form{
+	text-align: left;
+	font-family: tahoma;
+	font-size: 10pt;
+	color: black;
+}

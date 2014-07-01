@@ -1,0 +1,105 @@
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+	<title>Establecer una Cuenta</title>
+	</head>
+    <body>
+    	<table align="center" class="menu"> 
+    	<tr>
+        	<th><a href="establecer_cuenta.html">Establecer una Cuenta</a></th>
+        	<th><a href="registro_admicion.html">Registro de Admisi&oacute;n</a></th>        	
+        </tr>        
+    	</table>
+    	<div align="center"> 
+        <caption><h2>Registro de Admici&oacute;n</h2></caption>  
+        <caption><h5>Campos con * son requeridos</h5></caption>  
+        <caption><h3>Datos personales:</h3></caption>  
+        <form method="post" action="">
+        	<label for="id_nombre">Nombre:*	</label>
+          		<input type="text"	id="id_nombre" name="id_nombre" required><br/>
+            <label for="id_apellidopat">Apellido paterno:*	</label>
+                <input type="text"	id="id_apellidopat" name="id_apellidopat" required><br/>
+            <label for="id_apellidomat">Apellido materno:	</label>
+            	<input type="text"	id="id_apellidomat" name="id_apellidomat"><br/>
+            <label for="id_fechanaci">Fecha de Nacimiento:*	</label>
+            	<input type="text"	id="id_fechanaci" name="id_fechanaci" required><br/>
+            <label for="id_sexo">Sexo:*	</label>
+            	<select name="selectSexo" >
+                <option value="Seleciona"></option>
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+                </select><br/>
+            <label for="id_curp">CURP:*	</label>
+            	<input type="text" id="id_curp" name="id_curp" required><br/>
+            <caption><h3>Datos de contacto:</h3></caption> 
+            <label for="id_calle">Calle:*	</label>
+            	<input type="text" id="id_calle" name="id_calle" required><br/>            
+            <label for="id_numero">Numero:*	</label>
+            	<input type="number" id="id_numero" name="id_numero" required><br/>
+            <label for="id_colonia"> Colonia:*	</label>
+            	<input type="text" id="id_colonia" name="id_colonia" required><br/>
+            <label for="id_localidad">Localidad:*	</label>
+            	<input type="text" id="id_localidad" name="id_localidad" required><br/>            
+            <label for="id_cp">Codigo Postal:*	</label>
+            	<input type="number" id="id_cp" name="id_cp" required><br/>
+            <label for="id_tel"> Telefono:*	</label>
+            	<input type="tel" id="id_tel" name="id_tel" required><br/>
+            <label for="id_email">Correo electronico:*	</label>
+            	<input type="text" id="id_email" name="id_email" required><br/><br/>            
+            <caption><h3>Lugar de Nacimiento:</h3></caption>
+            <label for="id_pais">	Pais:	</label>
+            	<select name="selectPais" >
+                <option value=""></option>
+                <option value="MX">M&eacute;xico</option>
+                <option value="EUA">Estados Unidos</option>
+                </select><br/>
+            <label for="id_estado">	Estado:	</label>
+            	<select name="selectEstado" >
+                <option value=""></option>
+                <option value="Gto.">Guanajuato</option>
+                <option value="Qro.">Queretaro</option>
+                </select><br/>
+            <label for="id_municipio">	Municipio:*	</label>
+            	<select name="selectMunicipio" >
+                <option value=""></option>
+                <option value="SMA">San Miguel de Allende</option>
+                <option value="Cel">Celaya</option>
+                </select><br/>
+            <caption><h3>Especialidad a cursar:</h3></caption>
+            <label for="id_pais">	Especialidad:*	</label>
+            	<select name="selectEspecialidad" >
+                <option value=""></option>
+                <option value="INFO">Ing. en Inform&aacute;tica</option>
+                <option value="SIS">Ing. en Sistemas Computacionales</option>
+                </select><br/>
+            <caption><h3>Lugar donde realiz&oacute; estudios:</h3></caption>
+            <label for="id_estadoe">	Estado:	</label>
+            	<select name="selectEstado" >
+                <option value=""></option>
+                <option value="Gto.">Guanajuato</option>
+                <option value="Qro.">Queretaro</option>
+                </select><br/>
+            <label for="id_municipioe">	Municipio:	</label>
+            	<select name="selectMunicipio" >
+                <option value=""></option>
+                <option value="SMA">San Miguel de Allende</option>
+                <option value="Cel">Celaya</option>
+                </select><br/>
+            <label for="id_escupro">	Escuela de Procedencia:*	</label>
+            	<select name="selectEscuela" >
+                <option value=""></option>
+                <option value="CBTis 60">CBTis 60</option>
+                <option value="CBTis 198">CBTis 198</option>
+                </select><br/>
+          	<label fro="id_promedio">Promedio Bachillerato:*</label>
+            <input type="number" id="id_promedio" name="id_promedio" required><br/><br/>
+            <label>Estoy de acuerdo con la informaci&oacute;n proporcionala en el<br/>
+            		formulario de inscripcion en todos sus campos son datos validos y<br/>
+                    son para poder utilizar los servicios deacuerdo a ley.</label><br/><br/>
+                    
+            <input type="submit" value="Aceptar">
+        </form>
+        </div>
+    
+	</body>
+</html>

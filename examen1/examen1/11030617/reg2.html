@@ -1,0 +1,158 @@
+<html>
+	<head>
+		<title>Examen Primer Parcial</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	</head>
+	<body>
+		<table border="1" align="center" class="menu">
+			<tr>
+				<th><a href="index.html">Men&uacute;</a></th>
+				<th><a href="reg1.html">Formulario 1</a></th>
+			</tr>
+		</table>
+		<br/><br/>
+		<div align="center">
+			<img width="20%" height="40%" src="images/lince.gif"/>
+		</div>
+
+		<br/><br/>
+		Registro de Admisi&oacute;n
+		<br/>
+		<br/>
+		<br/>
+		<div style='float:left'>
+			<form method="POST" action="">
+				<span>Datos Personales</span> <br /><br />
+				<label for="id_nombre">Nombre:</label><br />
+				<input type="text" id="id_nombre" name="id_nombre" required>
+				<br />
+				<label for="id_apaterno">Apellido paterno:</label><br />
+				<input type="text" id="id_apaterno" name="id_apaterno" required>
+				<br />
+				<label for="id_amaterno">Apellido materno:</label><br />
+				<input type="text" id="id_amaterno" name="id_amaterno">
+				<br />
+				<label for="id_fechanac">Fecha de nacimiento:</label><br />
+				<input type="text" id="id_fechanac" name="id_fechanac">
+				<br />
+				<label for="id_sexo">Sexo:</label><br />
+				<select id="id_sexo" name="id_sexo">
+					<option value=""></option>
+					<option value="m">Masculino</option>
+					<option value="f">Femenino</option>
+				</select><br />
+				<label for="id_curp">CURP:</label><br />
+				<input type="text" id="id_curp" name="id_curp">
+				<br />
+				<label for="id_civil">Estado civil:</label><br />
+				<select id="id_civil" name="id_civil">
+					<option value=""></option>
+					<option value="m">Solter@</option>
+					<option value="f">Casad@</option>
+					<option value="f">Divorciad@</option>
+					<option value="f">Viud@</option>
+				</select><br />
+				<br /><br /><br />
+				<span>Datos de contacto</span> <br /><br />
+				<label for="id_calle">Calle:</label><br />
+				<input type="text" id="id_calle" name="id_calle" required>
+				<br />
+				<label for="id_numero">numero:</label><br />
+				<input type="text" id="id_numero" name="id_numero" required>
+				<br />
+				<label for="id_colonia">Colonia:</label><br />
+				<input type="text" id="id_colonia" name="id_colonia">
+				<br />
+				<label for="id_localidad">Localidad:</label><br />
+				<input type="text" id="id_localidad" name="id_localidad">
+				<br />
+				<label for="id_cp">Codigo postal:</label><br />
+				<input type="text" id="id_cp" name="id_cp">
+				<br />
+				<label for="id_telefono">Telefono:</label><br />
+				<input type="text" id="id_telefono" name="id_telefono">
+				<br />
+				<label for="id_email">Correo electronico:</label><br />
+				<input type="text" id="id_email" name="id_email">
+				<br />
+			</form>
+		</div>
+
+		<div style='float:right'>
+			<form method="POST" action="">
+				<span>Lugar de nacimiento</span> <br /><br />
+				<label for="id_pais">Pais:</label><br />
+				<select id="id_pais" name="id_pais">
+					<option value=""></option>
+					<option value="m">Mexico</option>
+					<option value="f">Francia</option>
+					<option value="e">Espa&ntilde;</option>
+				</select><br />
+				<br />
+				<label for="id_estado">Estado:</label><br />
+				<select id="id_estado" name="id_estado">
+					<option value=""></option>
+					<option value="g">Guanajuato</option>
+					<option value="m">Michoacan</option>
+					<option value="j">Jalisco</option>
+					<option value="q">Queretaro</option>
+				</select><br />
+				<br />
+				<label for="id_municipio">Municipio:</label><br />
+				<select id="id_municipio" name="id_municipio">
+					<option value=""></option>
+					<option value="c">Celaya</option>
+					<option value="a">Apaseo el alto</option>
+					<option value="a2">Apaseo el grande</option>
+					</select><br />
+				<br />
+				<span>Especialidad a cursar</span> <br /><br />
+				<select id="id_carrera" name="id_carrera">
+					<option value=""></option>
+					<option value="s">Ingenieria en sistemas computacionales</option>
+					<option value="a">Ingenieria en Bioquimica</option>
+					<option value="a2">Ingenieria Mecanica</option>
+					</select><br />
+
+				<span>Lugar donde realizo estudios</span> <br /><br />
+				<label for="id_estado2">Estado:</label><br />
+				<select id="id_estado2" name="id_estado2">
+					<option value=""></option>
+					<option value="g">Guanajuato</option>
+					<option value="m">Michoacan</option>
+					<option value="j">Jalisco</option>
+					<option value="q">Queretaro</option>
+				</select><br />
+				<br />
+				<label for="id_municipio2">Municipio:</label><br />
+				<select id="id_municipio2" name="id_municipio2">
+					<option value=""></option>
+					<option value="c">Celaya</option>
+					<option value="a">Apaseo el alto</option>
+					<option value="a2">Apaseo el grande</option>
+					</select><br />
+				<label for="id_escuela">"Escuela de procedencia:</label><br />
+				<select id="id_escuela" name="id_escuela">
+					<option value=""></option>
+					<option value="c">Uniersidad de celaya</option>
+					<option value="a">Utec</option>
+					<option value="a2">CBtis</option>
+					</select><br /><br /><br />
+
+				<label for="id_finac">"Tipo de financiamiento:</label><br />
+				<select id="id_finac" name="id_finac">
+					<option value="">Selecciona</option>
+					<option value="c">Prestamo escolar</option>
+					<option value="a">Pago total</option>
+					<option value="a2">Beca</option>
+					</select><br />
+				<br />
+
+
+				<br />
+				<label for="id_finac">"Estoy de acuerdo con compartir la informacion proporcionada:</label><br />
+				<input type="submit" value="Aceptar">
+			</form>
+		</div>
+	</body>
+</html>

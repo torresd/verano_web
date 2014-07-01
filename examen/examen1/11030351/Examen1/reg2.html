@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="Css/plantilla.css">
+</head>
+<body>
+<div>
+	<form>
+		<div class="panel datos">
+			<h3>Datos Personales</h3>
+			<br/>
+
+			<label>Nombre <label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="nom"/><br/>
+
+
+			<label>Apellido Paterno <label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="nom"/><br/>
+
+
+			<label>Apellido Materno</label><br/>
+			<input class="texto" type="text" name="nom"/><br/>
+
+
+			<label>Fecha de Nacimiento <label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="nom"/><br/>
+
+
+			<label>Sexo <label class="obligatorio">*</label></label><br/>
+				<select>
+					<option>Selecciona</option>
+					<option>Masculino</option>
+					<option>Femenino</option>
+				</select>
+
+				<br/>
+
+
+			<label>Curp <label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="nom"/>
+			<a href=""><div>Consulta Curp</div>
+			</a><br/>
+
+
+			<label>EstadoCivil <label class="obligatorio">*</label></label><br/>
+             <select>
+             	<option>Selecciona</option>
+             	<option>Soltero(a)</option>
+             	<option>Casado(a)</option>
+             	<option>Divorciado(a)</option>
+             	<option>Viudo(a)</option>
+             	<option>Union Libre(a)</option>
+             </select>
+
+		</div>
+
+		<div class="panel DatosContacto">
+			<h3>Datos De Contacto</h3>
+
+			<label for="calle">Calle<label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="calle" id="calle">
+			<br/>
+
+			<label for="numeroCa">Numero<label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="numeroCa" id="numeroCa">
+			<br/>
+			<label for="colonia">Colonia<label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="colonia" id="colonia">
+			<br/>
+
+			<label for="local">Localidad<label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="local" id="local">
+			<br/>
+			<label for="CodPos">Codigo Postal<label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="CodPos" id="CodPos">
+			<br/>
+			<label for="Tel">Telefono<label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="Tel" id="Tel">
+			<br/>
+
+			<label for="CorreoEle">Correo electronico<label class="obligatorio">*</label></label><br/>
+			<input class="texto" type="text" name="CorreoEle" id="CorreoEle">
+			<br/>
+
+		</div>
+
+		<div class="panel Nacimiento">
+			<h3>Lugar de nacimiento</h3><br>
+
+				<label>Pais</label><br/>
+				<select>
+					<option>Selecciona uno</option>
+					<option>Mexico</option>
+				</select>
+				<br/>
+
+
+				<label>Estados</label><br/>
+				<select>
+					<option>Selecciona uno</option>
+					<option>Guanajuato</option>
+				</select>
+				<br/>
+
+				<label>Municipio<label class="obligatorio">*</label></label><br/>
+				<select>
+					<option>Selecciona uno</option>
+					<option>Celaya</option>
+					<option>Comonfort</option>
+					<option>San Miguel</option>
+				</select>
+
+
+		</div>
+		<div class="panel Especialidad">
+			<h3>Especialidad a cursar</h3>
+
+			<label>Especialidad<label class="obligatorio">*</label></label><br/>
+				<select>
+					<option>Selecciona uno</option>
+					<option>Ing. en Sistemas</option>
+					<option>Ing. en Informatica</option>
+					<option>Ing. Industrial</option>
+					<option>Ing. Bioquimica</option>
+					<option>Ing. en Gestion Empresarial</option>
+				</select>
+		</div>
+
+		<div class="panel EstudiosAnt">
+			<h3>Lugar donde realizo estudios</h3><br>
+
+				
+
+
+				<label>Estados</label><br/>
+				<select>
+					<option>Selecciona uno</option>
+					<option>Guanajuato</option>
+				</select>
+				<br/>
+
+				<label>Municipio<label class="obligatorio">*</label></label><br/>
+				<select>
+					<option>Selecciona uno</option>
+					<option>Celaya</option>
+					<option>Comonfort</option>
+					<option>San Miguel</option>
+				</select>
+				<br/>
+
+				<label>Escuela de Providencia<label class="obligatorio">*</label></label><br/>
+				<select>
+					<option>Selecciona una</option>
+					<option>CBtis 198</option>
+					<option>Cecytec</option>
+					<option>Issca</option>
+					<option>Chafita</option>
+				</select>
+				<br/>
+
+				<label for="">Promedio bachillerato<label class="obligatorio">*</label></label><br/>
+				<input class="texto" type="text">
+
+		</div>
+		<div class="Finanziamiento">
+
+		 <label>Tipo de financiamiento <label class="obligatorio">*</label> </label><br/>
+		 <select>
+		 	<option>Selecciona</option>
+		 </select>
+			
+		</div>
+		<div class="panel Aceptar">
+			Estoy de acuerdo que la informacion proporcionada en el formulario de inscripccion en todos sus campos sus datos validos sirvan para poder utilizar el servio de acuerdo a la ley
+
+			<input  type="submit" name="enviar">
+		</div>
+	</form>
+	<div><a href="index.html">Regresar</a></div>
+</div>
+</body>
+</html>

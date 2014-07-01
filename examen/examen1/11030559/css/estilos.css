@@ -1,0 +1,37 @@
+.id_texto_rojo{
+	font-family:Comic Sans MS;
+	font-size:10pt;
+	color:#FE0000
+}
+
+.titulo3{
+	font-family:Arial;
+	font-size:12pt;
+	color:#309900
+}
+h2 {
+	color:#408D01;
+	font-family:Comic Sans MS;
+	font-size:20pt;
+}
+.id_texto_normal{
+	font-family:Arial;
+	font-size:10pt;
+	color:#000000;
+}
+
+.titulo{
+	font-family:Arial;
+	font-size:12pt;
+	color:#000000
+}
+
+.titulo2{
+	font-family:Arial;
+	font-size:12pt;
+	color:#000000
+}
+
+form{
+	background-color: #CEFECA;
+}

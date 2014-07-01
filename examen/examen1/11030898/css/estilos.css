@@ -1,0 +1,17 @@
+body{
+	background-image: url(../images/Linzo%20azul.jpg);
+	background-repeat: no-repeat;
+	background-size:auto
+}
+
+label{
+	color:#FFFFFF;
+	font-family:Verdana;
+	font-size:14px;
+}
+
+caption{
+	color:#00108A;
+	font-family:Verdana;
+	font-size:18px;
+}

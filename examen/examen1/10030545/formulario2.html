@@ -1,0 +1,206 @@
+ <!-- 28 de junio de 2014 --> 
+<html>
+	<head>
+		<title>Registro de admisi&oacute;n</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	</head>
+	<body>
+
+		<h1>Registro de Admisi&oacute;n</h1>
+
+		<h4>Campos con * son requeridos</h4>  
+		<br />
+
+		<h2> Datos Personales</h2>
+
+		<form method="POST" action="" >
+
+			<label for="nombre">Nombre*:</label>
+			<input type="text" id="nombre" name="nombre" required />
+
+			<br />
+			
+			<label for="apellido_p">Apellido Paterno*:</label>
+			<input type="text" id="apellido_p" name="apellido_p" required />
+
+			<br />
+			
+			<label for="apellido_m">Apellido Materno*:</label>
+			<input type="text" id="apellido_m" name="apellido_m" required />
+
+			<br />
+			
+			<label for="fecha_nac">Fecha de nacimiento*:</label>
+			<input type="text" id="fecha_nac" name="fecha_nac" required />
+
+			<label for="sexo">Sexo*</label>
+			<select id="sexo" name="sexo">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">M</option>
+			  	<option value="2">F</option>
+	  		</select>
+
+	  		<br />
+
+	  		<label for="curp:">Curp*</label>
+			<input type="text" id="curp:" name="curp:" required />
+
+			<input type="submit" name="consulta_C" value="CONSULTAR CURP">
+
+			<br />
+
+			<label for="edo_civil">Estado Civil*</label>
+			<select id="edo_civil" name="edo_civil">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">Soltero</option>
+			  	<option value="2">Casado</option>
+			  	<option value="3">Divorciado</option>
+	  		</select>
+
+			<br />
+
+			<h2>Datos de Contacto</h2>
+
+	  		<label for="calle">Calle*</label>
+			<input type="text" id="calle" name="calle" required />
+
+			<br />
+
+	  		<label for="numero">N&uacute;mero*</label>
+			<input type="text" id="numero" name="numero" required />
+
+			<br />
+
+	  		<label for="colonia">Colonia*</label>
+			<input type="text" id="colonia" name="colonia" required />
+
+			<br />
+
+
+	  		<label for="localidad">Localidad*:</label>
+			<input type="text" id="localidad" name="localidad" style="width:50px;" required />
+
+			<br />
+
+	  		<label for="cp">C&oacute;digo Postal*:</label>
+			<input type="text" id="cp" name="cp" style="width:30px;" required />
+
+			<label for="telefono">Tel&eacute;fono*:</label>
+			<input type="text" id="telefono" name="telefono" required />
+
+			<br />
+
+	  		<label for="email">Correo electr&oacute;nico*:</label>
+			<input type="text" id="email" name="email" required />
+
+			<br />
+
+			<h2>Lugar de Nacimiento</h2>
+	  		
+			<br />
+
+	  		<label for="pais">Pais</label>
+			<select id="pais" name="pais">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">Brasil</option>
+			  	<option value="2">EUA</option>
+			  	<option value="3">Ecuador</option>
+	  		</select>
+
+	  		<br />
+
+	  		<label for="estado">Estado</label>
+			<select id="estado" name="estado">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">Brasil</option>
+			  	<option value="2">EUA</option>
+			  	<option value="3">Ecuador</option>
+	  		</select>
+
+	  		<br />
+
+	  		<label for="municipio">Municipio*:</label>
+			<select id="municipio" name="municipio">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">Brasil</option>
+			  	<option value="2">EUA</option>
+			  	<option value="3">Ecuador</option>
+	  		</select>
+
+	  		<h2>Especialidad a cursar:</h2>
+	  		
+			<br />
+
+	  		<label for="especialidad">Especialidad*:</label>
+			<select id="especialidad" name="especialidad">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">ISC</option>
+			  	<option value="2">Industrial</option>
+			  	<option value="3">Mecanica</option>
+	  		</select>
+
+
+	  		<h2>Lugar donde realiz&oacute; estudios:</h2>
+	  		
+			<br />
+
+
+	  		<label for="estado">Estado:</label>
+			<select id="estado" name="estado">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">Brasil</option>
+			  	<option value="2">EUA</option>
+			  	<option value="3">Ecuador</option>
+	  		</select>
+
+	  		<br />
+
+	  		<label for="municipio">Municipio:</label>
+			<select id="municipio" name="municipio">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">Brasil</option>
+			  	<option value="2">EUA</option>
+			  	<option value="3">Ecuador</option>
+	  		</select>
+
+	  		<br />
+
+	  		<label for="esc_proc">Escuela de Procedencia*:</label>
+			<select id="esc_proc" name="esc_proc">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">ITC</option>
+			  	<option value="2">..</option>
+			  	<option value="3">.</option>
+	  		</select>
+
+	  		<br />
+
+	  		<label for="prom">Promedio Bachillerato*:</label>
+			<input type="text" id="prom" name="prom" style="width:30px;" required />
+
+			<br />
+
+	  		<label for="financiamiento">Tipo de financiamiento*: </label>
+			<select id="financiamiento" name="financiamiento">
+				<option value="" disabled selected>Seleccionar</option>
+			  	<option value="1">Beca</option>
+			  	<option value="2">..</option>
+			  	<option value="3">.</option>
+	  		</select>
+
+	  		<label>Estoy de a cuerdo...</label>
+	  		<input type="submit" name="aceptar" value="Aceptar">
+	  		
+
+
+		</form>	
+
+		  
+ 
+
+
+
+
+
+	</body>
+</html>

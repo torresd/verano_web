@@ -1,0 +1,82 @@
+
+body
+{
+	background-image:url(../images/fondoMundial.jpg);
+	/*background-repeat: no repeat;*/
+	background-size:100% auto;
+}
+table th
+{
+	background-color:#C00;
+	color:#FF9;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-align:center;
+	alignment-adjust:central;
+
+}
+
+.titulos
+{
+
+	color:#090;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	text-align:center;
+	alignment-adjust:central;
+	
+}
+
+.subtitulos
+{
+
+	color:#090;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	text-align:center;
+	alignment-adjust:central;
+   
+	
+}
+
+.campos
+{
+	
+	color:#333;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:center;
+	alignment-adjust:central;
+
+}
+
+.notas
+{
+
+	color:#F00;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:center;
+	alignment-adjust:central;
+	
+}
+
+.ale1
+{
+	background:url(../images/fondo.jpg)
+	
+}
+
+body a
+{
+	
+	color:#369;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	text-align:center;
+	alignment-adjust:central;
+	
+}
+
+
+
