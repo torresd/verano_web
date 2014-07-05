@@ -134,7 +134,6 @@ DROP TABLE IF EXISTS `fifa`.`entrenador` ;
 
 CREATE TABLE IF NOT EXISTS `fifa`.`entrenador` (
   `identrenador` INT NOT NULL AUTO_INCREMENT,
-  `identrenador` INT NOT NULL,
   `idpais` INT NOT NULL,
   INDEX `fk1Entrenador_idx` (`idpais` ASC),
   INDEX `fk2Entrenador_idx` (`identrenador` ASC),
