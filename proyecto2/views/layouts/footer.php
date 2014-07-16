@@ -21,12 +21,7 @@
     <script type="text/javascript" src="../js/moment.js"></script>
     <script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
     <script type="text/javascript" src="../js/bootstrap-datetimepicker.es.js"></script>
-    <script type="text/javascript">
-                  $(function () {
-                      $('#datetimepicker1').datetimepicker({language: 'es'});
-                      
-                  });
-    </script>
+    <script type="text/javascript" src="../js/bootstrapValidator.min.js"></script>
     <script src="../js/mi.js"></script>
     <script src="../js/main.js"></script>
 

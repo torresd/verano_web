@@ -1,6 +1,18 @@
 <?php 
-  session_start();
+  include ('../../libs/adodb5/adodb-pager.inc.php');
+  include ('../../libs/adodb5/adodb.inc.php');
+  include ('../../models/Conexion.php');
+  include ('../../models/Modelo.php');
+  include ('../../models/Articulo.php');
+  include ('../../controllers/ArticuloController.php');
+  include ('../../libs/Er.php');
   include ('../layouts/header.php');
+
+  if (isset($_POST['nombre'])){
+  	
+  	$articuloC=new ArticuloController();
+  	$articuloC->insertaArticulo($_POST);
+}
 ?>
 
 
@@ -57,9 +69,9 @@
 		    <br>
 		    <input type="file" id="archivo_pdf" name="archivo_pdf" class="txt">
 		    <br>
-		    <label for="idstatus">Status</label>
+		    <label for="id_status">Status</label>
 		    <br>
-		    <select id="idstatus" name="idstatus">
+		    <select id="id_status" name="id_status">
 			  <option value="1">Propuesta</option>
 			  <option value="2">En desarrollo</option>
 			  <option value="3">Finalizado</option>

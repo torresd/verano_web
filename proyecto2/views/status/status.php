@@ -1,6 +1,18 @@
 <?php 
-  session_start();
+  include ('../../libs/adodb5/adodb-pager.inc.php');
+  include ('../../libs/adodb5/adodb.inc.php');
+  include ('../../models/Conexion.php');
+  include ('../../models/Modelo.php');
+  include ('../../models/Status.php');
+  include ('../../controllers/StatusController.php');
+  include ('../../libs/Er.php');
   include ('../layouts/header.php');
+
+  if (isset($_POST['status'])){
+  	
+  	$statusC=new StatusController();
+  	$statusC->insertaStatus($_POST);
+}
 ?>
 
 
