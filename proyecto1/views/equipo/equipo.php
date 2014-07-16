@@ -4,14 +4,13 @@
   include ('../../models/Conexion.php');
   include ('../../models/Modelo.php');
   include ('../../models/Equipo.php'); //nombre del archivo 
-  include ('../../controllers/EquipoController/LoginController.php');
+  include ('../../controllers/EquipoController.php');
   include ('../../libs/Er.php');
   include ('../layouts/header.php');
 	if(isset($_POST['nombre'])) {
-		echo"<pre>";
-		print_r($_POST);
-		echo"</pre>";
 		
+		$equipoC = new EquipoController();
+		$equipoC->insertaEquipo($_POST);
 	}
   
 ?>

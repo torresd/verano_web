@@ -127,9 +127,10 @@ class Er
 
 	public function valida_imagen($valor)
 	{
-		$exp_reg = '/^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)( [a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]*)?$/'; 
+		$exp_reg = '/^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)
+		( [a-zA-Z0-9\-\.\?\,\'\/\\\+&%\$#_]*)?$/'; 
 		if (preg_match($exp_reg, $valor)) {
-		     return true;
+		     return true; 
 		} else { 
 		     return false;
 		} 

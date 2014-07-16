@@ -39,7 +39,7 @@ class Equipo extends Modelo{
 
         $er = new Er();
         
-        if ( !$er->valida_email($valor) ){
+        if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Este nombre (".$valor.") le faltan o le sobran caracteres (2-30 caracteres)";
         }
 
@@ -48,6 +48,40 @@ class Equipo extends Modelo{
         
     }
 
+
+    public function get_idpais(){
+        return $this->idpais;
+    } 
+
+    public function set_idpais($valor){
+
+        $er = new Er();
+        
+        if ( !$er->valida_idpais($valor) ){
+            $this->errores[] = "Numero de pais no valido";
+        }
+
+        
+        $this->nombre = trim($valor);
+        
+    }
+
+    public function get_escudo(){
+        return $this->escudo;
+    } 
+
+    public function set_escudo($valor){
+
+        $er = new Er();
+        
+        if ( !$er->valida_imagen($valor) ){
+            $this->errores[] = "Este archivo (".$valor.") no es valido";
+        }
+
+        
+        $this->nombre = trim($valor);
+        
+    }
     
     
 
