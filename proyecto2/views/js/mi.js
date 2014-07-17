@@ -1,4 +1,4 @@
-$(document).ready(function() {
+    $(document).ready(function() {
 
 	$(function () {
            $('#datetimepicker1').datetimepicker({language: 'es'});

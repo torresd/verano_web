@@ -62,7 +62,7 @@ class Equipo extends Modelo{
         }
 
         
-        $this->nombre = trim($valor);
+        $this->idpais = trim($valor);
         
     }
 
@@ -74,12 +74,12 @@ class Equipo extends Modelo{
 
         $er = new Er();
         
-        if ( !$er->valida_imagen($valor) ){
+        /*if ( !$er->valida_imagen($valor['name']) ){
             $this->errores[] = "Este archivo (".$valor.") no es valido";
-        }
+        }*/
 
         
-        $this->nombre = trim($valor);
+        $this->escudo = trim($valor['name']);
         
     }
     

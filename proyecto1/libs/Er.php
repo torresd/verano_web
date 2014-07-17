@@ -75,7 +75,7 @@ class Er
 
 	public function valida_idpais($valor)
 	{
-		$exp_reg = '/^(0[1-9]|1\d|2[0-3])$/'; 
+		$exp_reg = "/^\d*$/";
 		if (preg_match($exp_reg, $valor)) {
 		     return true;
 		} else { 

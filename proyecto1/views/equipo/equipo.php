@@ -7,10 +7,13 @@
   include ('../../controllers/EquipoController.php');
   include ('../../libs/Er.php');
   include ('../layouts/header.php');
+	
+
 	if(isset($_POST['nombre'])) {
 		
+
 		$equipoC = new EquipoController();
-		$equipoC->insertaEquipo($_POST);
+		$equipoC->insertaEquipo($_POST,$_FILES);
 	}
   
 ?>
@@ -19,8 +22,8 @@
 <div class="row" align="center">
 	<div class"col-md-4">
 		<h2 align="center">Equipos</h2>
-
-		<form role"form" action="" method="POST">
+<!-- ../../upload.php -->
+		<form role"form" action="" method="POST" enctype="multipart/form-data">
 			
 			<label for="nombre">Nombre</label>
 			<input type="text" id="nombre" name="nombre" class="txt">
