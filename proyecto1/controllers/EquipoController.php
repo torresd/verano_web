@@ -21,6 +21,7 @@
 			$equipo->set_escudo($archivos['escudo']);
 			if (count($equipo->errores)>0) {
 				print_r($equipo->errores);
+				
 				die();
 			}
 			else {

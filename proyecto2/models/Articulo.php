@@ -141,7 +141,23 @@ class Articulo extends Modelo{
 
     public function set_archivo_pdf($valor){
 
-            $this->archivo_pdf = $valor;
+         $er = new Er();
+        if ( (( !$er->valida_pdf($valor['type']))) )
+        {
+            $this->errores[] = "Este tipo de (".$valor['type'].") archivo no es valido";
+        }
+        else
+            if(!$er->valida_tam($valor['size']))
+            {
+                $this->errores[] = "Este tamanio (".$valor['size'].")bits de archivo no es valido";
+            
+            }
+                else
+                {
+                    $this->archivo_pdf = trim($valor['name']);
+                }
+
+             
         
     }
 
@@ -152,16 +168,11 @@ class Articulo extends Modelo{
     public function set_id_status($valor){
         $er = new Er();
         
-        if ( !$er->valida_idnum($valor) ){
+        if ( !$er->valida_id($valor) ){
             $this->errores[] = "Este id (".$valor.") no es valido";
         }
 
-        $rs = $this->consulta_sql("select * from articulo where id_status = '$valor'");
-        $rows = $rs->GetArray();
-        
-        if(count($rows) > 0){
-            $this->errores[] = "Este id (".$valor.") ya esta registrado"; 
-        }else{
+        else{
             $this->id_status = trim($valor);
         }
     }

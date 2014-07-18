@@ -12,13 +12,13 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/style.css" >
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/navbar.css" >
+    
     <link rel="stylesheet" href="../css/jquery.fancybox.css">
     <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="../css/bootstrapValidator.min.css"/>-->
     <link rel="stylesheet" href="../css/mi.css" >
-
+<link rel="stylesheet" href="../css/navbar.css" >
   
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -46,22 +46,22 @@
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li>
-          <a href="../integrantes/index.html">Integrantes</a>
+          <a href="../integrante/integrante.php">Integrantes</a>
         </li>
         <li>
-          <a href="../pais/index.html">Pais</a>
+          <a href="../pais/pais.php">Pais</a>
         </li>
         <li>
-          <a href="../continente/index.html">Continente</a>
+          <a href="../continente/continente.php">Continente</a>
         </li>
         <li>
-          <a href="../equipo/index.html">Equipo</a>
+          <a href="../equipo/equipo.php">Equipo</a>
         </li>
         <li>
-          <a href="../posicion/index.html">Posicion</a>
+          <a href="../posicion/posicion.php">Posicion</a>
         </li>
         <li>
-          <a href="../estadio/index.html">Estadio</a>
+          <a href="../estadio/estadio.php">Estadio</a>
         </li>
         <li class="active" align="right">
           <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>    /</a>

@@ -20,7 +20,15 @@ class Er {
 		return false;
 		}
 	}
-
+	public function valida_id($valor)
+	{
+		$exp_reg = "/^\d*$/";
+		if (preg_match($exp_reg, $valor)) {
+		     return true;
+		} else { 
+		     return false;
+		} 
+	}
 	public function valida_num($valor)
 	{
 		$exp_reg = "/^\d*$/";
@@ -65,12 +73,54 @@ class Er {
 	public function valida_fecha($valor)
 	{	
 		$exp_reg = "/^\d{1,2}\/\d{1,2}\/\d{2,4}$/";
-		if (preg_match($exp_reg,$valor)){
+		if (preg_match($exp_reg,$valor) ) {
 		return true;
 		}else{
 		return false;
 		}
 	}
+
+	public function valida_img($valor)
+	{	
+		
+        if ((($valor== "image/gif")
+        || ($valor== "image/jpeg")
+        || ($valor == "image/jpg")
+        || ($valor == "image/pjpeg")
+        || ($valor == "image/x-png")
+        || ($valor == "image/png")))
+        {
+        return true;
+		}else{
+		return false;
+		}
+	}
+
+	public function valida_pdf($valor)
+	{	
+		
+
+        if ($valor== "application/pdf")
+        
+        {
+        return true;
+		}else{
+		return false;
+		}
+	}
+
+	public function valida_tam($valor)
+	{	
+		if ($valor < 200000)//bits
+        {
+        return true;
+		}else{
+		return false;
+		}
+	}
+
+
+
 	
 
 }

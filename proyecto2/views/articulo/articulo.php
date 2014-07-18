@@ -11,7 +11,7 @@
   if (isset($_POST['nombre'])){
   	
   	$articuloC=new ArticuloController();
-  	$articuloC->insertaArticulo($_POST);
+  	$articuloC->insertaArticulo($_POST,$_FILES);
 }
 ?>
 
@@ -28,7 +28,7 @@
 		<div class="col-md-3">
 		</div>
 		<div class="col-md-6" align="center">
-		  <form id="contact" name="contact" action="#" method="post" align = "right">
+		  <form role"form" action="" method="POST" enctype="multipart/form-data">
 		    
 		    <label for="nombre">Nombre</label>
 		    <br>

@@ -57,12 +57,16 @@ class Equipo extends Modelo{
 
         $er = new Er();
         
-        if ( !$er->valida_idpais($valor) ){
+        if ( !$er->valida_id($valor) ){
             $this->errores[] = "Numero de pais no valido";
+        }
+        else
+        {
+            $this->idpais = trim($valor);
         }
 
         
-        $this->idpais = trim($valor);
+        
         
     }
 
@@ -73,13 +77,20 @@ class Equipo extends Modelo{
     public function set_escudo($valor){
 
         $er = new Er();
-        
-        /*if ( !$er->valida_imagen($valor['name']) ){
-            $this->errores[] = "Este archivo (".$valor.") no es valido";
-        }*/
-
-        
-        $this->escudo = trim($valor['name']);
+        if ( (( !$er->valida_img($valor['type']))) )
+        {
+            $this->errores[] = "Este tipo de archivo no es valido";
+        }
+        else
+            if(!$er->valida_tam($valor['size']))
+            {
+                $this->errores[] = "Este tamanio de archivo no es valido";
+            
+            }
+                else
+                {
+                    $this->escudo = trim($valor['name']);
+                }
         
     }
     

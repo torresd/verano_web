@@ -33,6 +33,8 @@ class Revista extends Modelo{
     private $directorio;
     private $editorial;
     private $id_status;
+
+    
     
        
     
@@ -75,11 +77,26 @@ class Revista extends Modelo{
         return $this->portada;
     } 
 
-    public function set_portada($valor){
+    public function set_portada($valor)
+    {
+        $tipo= $valor['type'];
+        $er = new Er();
 
-        
-            $this->portada = $valor;
-        
+        if ( (( !$er->valida_img($valor['type']))) )
+        {
+            $this->errores[] = "Este tipo de archivo (".$valor['type'].") no es valido";
+        }
+        else
+            if(!$er->valida_tam($valor['size']))
+            {
+                $this->errores[] = "Este tamanio (".$valor['size'].")bits de archivo no es valido";
+            
+            }
+                else
+                {
+                    $this->portada = trim($valor['name']);
+                }
+
     }
 
 
@@ -130,16 +147,10 @@ class Revista extends Modelo{
     public function set_numero($valor){
         $er = new Er();
         
-        if ( !$er->valida_idnum($valor) ){
+        if ( !$er->valida_id($valor) ){
             $this->errores[] = "Este numero (".$valor.") no es valido";
         }
-
-        $rs = $this->consulta_sql("select * from revista where numero = '$valor'");
-        $rows = $rs->GetArray();
-        
-        if(count($rows) > 0){
-            $this->errores[] = "Este numero (".$valor.") ya esta registrado"; 
-        }else{
+        else{
             $this->numero = trim($valor);
         }
     }
@@ -195,16 +206,16 @@ class Revista extends Modelo{
     public function set_id_status($valor){
         $er = new Er();
         
-        if ( !$er->valida_idnum($valor) ){
+        if ( !$er->valida_id($valor) ){
             $this->errores[] = "Este id (".$valor.") no es valido";
         }
-
+/*
         $rs = $this->consulta_sql("select * from revista where id_status = '$valor'");
         $rows = $rs->GetArray();
         
         if(count($rows) > 0){
             $this->errores[] = "Este id (".$valor.") ya esta registrado"; 
-        }else{
+        }*/else{
             $this->id_status = trim($valor);
         }
     }

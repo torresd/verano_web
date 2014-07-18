@@ -45,7 +45,7 @@ class Er
 
 	public function valida_estatura($valor)
 	{
-		$exp_reg = '/^(0[1-9]|1\d|2[0-3]).([0-5]\d)$/'; 
+		$exp_reg = '/[^-0-9\.]/'; 
 		if (preg_match($exp_reg, $valor)) {
 		     return true;
 		} else { 
@@ -55,7 +55,7 @@ class Er
 
 	public function valida_edad($valor)
 	{
-		$exp_reg = '/^(0[1-9]|1\d|2[0-3])$/'; 
+		$exp_reg = "/[^-0-9\.]/"; 
 		if (preg_match($exp_reg, $valor)) {
 		     return true;
 		} else { 
@@ -73,7 +73,7 @@ class Er
 		} 
 	}
 
-	public function valida_idpais($valor)
+	public function valida_id($valor)
 	{
 		$exp_reg = "/^\d*$/";
 		if (preg_match($exp_reg, $valor)) {
@@ -135,6 +135,57 @@ class Er
 		     return false;
 		} 
 	}
+
+	public function valida_img($valor)
+	{	
+		
+        if ((($valor== "image/gif")
+        || ($valor== "image/jpeg")
+        || ($valor == "image/jpg")
+        || ($valor == "image/pjpeg")
+        || ($valor == "image/x-png")
+        || ($valor == "image/png")))
+        {
+        return true;
+		}else{
+		return false;
+		}
+	}
+
+	public function valida_pdf($valor)
+	{	
+		
+
+        if ($valor== "application/pdf")
+        
+        {
+        return true;
+		}else{
+		return false;
+		}
+	}
+
+	public function valida_tam($valor)
+	{	
+		if ($valor < 200000)//bits
+        {
+        return true;
+		}else{
+		return false;
+		}
+	}
+
+	public function valida_nimg($valor)
+	{ 
+		$exp_reg="/^([_a-z0-9-])*+(\.){1}((jpg|png|gif|jpeg|pjpeg|x-png){1})$/"; 
+		if (preg_match($exp_reg, $valor)) 
+			{ 
+				return true; 
+			} else 
+			{ 
+				return false; 
+			} 
+		}
 
 }
 
