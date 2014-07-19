@@ -4,7 +4,6 @@ class Equipo extends Modelo{
     public $nombre_tabla = 'equipo';
     public $pk = 'idequipo';
     
-    
     public $atributos = array(
         'nombre'=>array(),
         'idpais'=>array(),
@@ -43,8 +42,11 @@ class Equipo extends Modelo{
             $this->errores[] = "Este nombre (".$valor.") le faltan o le sobran caracteres (2-30 caracteres)";
         }
 
-        
-        $this->nombre = trim($valor);
+        else
+        {
+                    $this->nombre = trim($valor);
+
+        }
         
     }
 

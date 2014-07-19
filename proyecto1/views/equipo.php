@@ -1,4 +1,5 @@
 <?php 
+  include ('../../libs/security.php');
   include ('../../libs/adodb5/adodb-pager.inc.php');
   include ('../../libs/adodb5/adodb.inc.php');
   include ('../../models/Conexion.php');
@@ -6,11 +7,10 @@
   include ('../../models/Equipo.php'); //nombre del archivo 
   include ('../../controllers/EquipoController/LoginController.php');
   include ('../../libs/Er.php');
+  
   include ('../layouts/header.php');
 	if(isset($_POST['nombre'])) {
-		echo"<pre>";
-		print_r($_POST);
-		echo"</pre>";
+		
 		
 	}
   

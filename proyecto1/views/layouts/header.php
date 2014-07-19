@@ -1,5 +1,5 @@
 <?php 
-  define('BASEURL','http://localhost/verano_web/proyecto1');
+  define('BASEURL','http://localhost/verano_web/proyecto1/');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,27 +45,37 @@
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
+        <?php if( isset($_SESSION['user']) ){?>
         <li>
-          <a href="../integrante/integrante.php">Integrantes</a>
+          <a href="<?php echo BASEURL; ?>views/integrante/integrante.php">Integrantes</a>
         </li>
         <li>
-          <a href="../pais/pais.php">Pais</a>
+          <a href="<?php echo BASEURL; ?>views/pais/pais.php">Pais</a>
         </li>
         <li>
-          <a href="../continente/continente.php">Continente</a>
+          <a href="<?php echo BASEURL; ?>views/continente/continente.php">Continente</a>
         </li>
         <li>
-          <a href="../equipo/equipo.php">Equipo</a>
+          <a href="<?php echo BASEURL; ?>views/equipo/equipo.php">Equipo</a>
         </li>
         <li>
-          <a href="../posicion/posicion.php">Posicion</a>
+          <a href="<?php echo BASEURL; ?>views/posicion/posicion.php">Posicion</a>
         </li>
         <li>
-          <a href="../estadio/estadio.php">Estadio</a>
+          <a href="<?php echo BASEURL; ?>views/estadio/estadio.php">Estadio</a>
         </li>
+        <?php } ?>
+        <?php if( !isset($_SESSION['user']) ){?>
         <li class="active" align="right">
-          <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>    /</a>
+          <a href="<?php echo BASEURL; ?>views/site/login.php">Login<span class="glyphicon glyphicon-log-in">
+          </span> /</a>
         </li>
+        <?php }else{ ?>
+        <li class="active" align="right">
+          <a href="<?php echo BASEURL; ?>views/site/logout.php">Logout<span class="glyphicon glyphicon-log-out">
+          </span> /</a>
+        </li>
+        <?php } ?>
         <li class="active" align="right">
           <a href="#"><span class="glyphicon glyphicon-subtitles"></span>    /</a>
         </li>

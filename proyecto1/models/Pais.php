@@ -41,9 +41,12 @@ class Pais extends Modelo{
         if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Este nombre (".$valor.") le faltan o le sobran caracteres (2-30 caracteres)";
         }
+        else {
+                  $this->nombre = trim($valor);
+  
+        }
 
         
-        $this->nombre = trim($valor);
         
     }
 
@@ -55,7 +58,7 @@ class Pais extends Modelo{
 
         $er = new Er();
         
-        if ( !$er->valida_id($valor) ){
+        if ( !$er->valida_id(trim($valor)) ){
             $this->errores[] = "Numero de continente no valido";
         }
         else

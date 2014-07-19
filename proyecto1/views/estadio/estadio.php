@@ -1,4 +1,5 @@
-<?php 
+<?php
+  include ('../../libs/security.php'); 
   include ('../../libs/adodb5/adodb-pager.inc.php');
   include ('../../libs/adodb5/adodb.inc.php');
   include ('../../models/Conexion.php');
@@ -8,10 +9,10 @@
   include ('../../libs/Er.php');
   include ('../layouts/header.php');
 	if(isset($_POST['nombre'])) {
-		
 		$estadioC = new EstadioController();
 		$estadioC->insertaEstadio($_POST);
-	}
+	}    
+
   
 ?>
 

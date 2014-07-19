@@ -80,6 +80,19 @@ class Modelo extends Conexion {
         return $this->get_error($this->db->Execute($sql), "Error al eliminar");
     }
 
+    public function getDropDown($tabla,$name,$id,$where = ' ')
+    {
+         $rs = $this->consulta_sql(" select * from $tabla ".$where);
+         $rows = $rs->GetArray();
+         $dropDown = '<select class="form-control" id="'.$id.'" name="'.$name.'">';
+         foreach ($rows as $key => $value) 
+         {
+            $dropDown.= '<option value="'.$value['idpais'].'">'.utf8_encode($value['nombre']).'</option>';
+         }
+         $dropDown.= '</select>'; 
+         return $dropDown;
+    }
+
 }
 ?>
 

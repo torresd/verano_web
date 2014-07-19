@@ -1,4 +1,5 @@
 <?php 
+include ('../../libs/security.php'); 
   include ('../../libs/adodb5/adodb-pager.inc.php');
   include ('../../libs/adodb5/adodb.inc.php');
   include ('../../models/Conexion.php');
@@ -8,24 +9,28 @@
   include ('../../libs/Er.php');
   include ('../layouts/header.php');
 	
+		$clase = new PaisController();
 
 	if(isset($_POST['nombre'])) {
 		
 
-		$paisC = new PaisController();
-		$paisC->insertaPais($_POST,$_FILES);
+		$clase->insertaPais($_POST,$_FILES);
 	}
   
 ?>
 
 <div class="row" align="center">
 	<div class"col-md-4">
+
+ 	<?php include "../funcion.php" ?>
+
 	<h2 align="center">Paises</h2>
 
 	<form role"form" action="" method="POST" enctype="multipart/form-data">
 		
 		<label for="nombre">Nombre</label>
-		<input type="text" id="nombre" name="nombre" class="txt">
+		<input type="text" id="nombre" name="nombre" class="txt" value="
+			<?php echo $clase->get_nombre(); ?>">
 		<br>
 		<label for="bandera">Bandera</label>
 		<input type="file" id="bandera" name="bandera" class="txt">

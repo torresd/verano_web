@@ -61,7 +61,7 @@ class Articulo extends Modelo{
 
         $er = new Er();
         
-        if ( !$er->valida_nombre($valor) ){
+        if ( !$er->valida_nombre(trim($valor)) ){
             $this->errores[] = "Este nombre (".$valor.") no es valido";
         }
 
@@ -71,7 +71,7 @@ class Articulo extends Modelo{
         if(count($rows) > 0){
             $this->errores[] = "Este nombre (".$valor.") ya esta registrado"; 
         }else{
-            $this->nombre = $valor;
+            $this->nombre = trim($valor);
         }
     }
 
@@ -81,7 +81,14 @@ class Articulo extends Modelo{
 
     public function set_resumen($valor){
 
-            $this->resumen = $valor;
+            $er = new Er();
+        
+        if ( !$er->valida_texto(trim($valor)) ){
+            $this->errores[] = "Este resumen  no es valido";
+        }
+        else{
+            $this->resumen = trim($valor);
+        }
         
     }
 
@@ -91,7 +98,14 @@ class Articulo extends Modelo{
 
     public function set_abstract($valor){
 
-            $this->abstract = $valor;
+            $er = new Er();
+        
+        if ( !$er->valida_texto(trim($valor)) ){
+            $this->errores[] = "Este abstract  no es valido";
+        }
+        else{
+            $this->abstract = trim($valor);
+        }
         
     }
 
@@ -101,7 +115,14 @@ class Articulo extends Modelo{
 
     public function set_introduccion($valor){
 
-            $this->introduccion = $valor;
+            $er = new Er();
+        
+        if ( !$er->valida_texto(trim($valor)) ){
+            $this->errores[] = "Esta introduccion  no es valido";
+        }
+        else{
+            $this->introduccion = trim($valor);
+        }
         
     }
 
@@ -111,7 +132,14 @@ class Articulo extends Modelo{
 
     public function set_metodologia($valor){
 
-            $this->metodologia = $valor;
+            $er = new Er();
+        
+        if ( !$er->valida_texto(trim($valor)) ){
+            $this->errores[] = "Esta metodologia  no es valido";
+        }
+        else{
+            $this->metodologia = trim($valor);
+        }
         
     }
 
@@ -121,7 +149,14 @@ class Articulo extends Modelo{
 
     public function set_contenido($valor){
 
-            $this->contenido = $valor;
+            $er = new Er();
+        
+        if ( !$er->valida_texto(trim($valor)) ){
+            $this->errores[] = "Este contenido  no es valido";
+        }
+        else{
+            $this->contenido = trim($valor);
+        }
         
     }
 
@@ -168,7 +203,7 @@ class Articulo extends Modelo{
     public function set_id_status($valor){
         $er = new Er();
         
-        if ( !$er->valida_id($valor) ){
+        if ( !$er->valida_id(trim($valor)) ){
             $this->errores[] = "Este id (".$valor.") no es valido";
         }
 
@@ -183,7 +218,14 @@ class Articulo extends Modelo{
 
     public function set_conclusiones($valor){
 
-            $this->conclusiones = $valor;
+            $er = new Er();
+        
+        if ( !$er->valida_texto(trim($valor)) ){
+            $this->errores[] = "Esta conclusion  no es valido";
+        }
+        else{
+            $this->conclusiones = trim($valor);
+        }
         
     }
 
@@ -193,7 +235,14 @@ class Articulo extends Modelo{
 
     public function set_agradecimientos($valor){
 
-            $this->agradecimientos = $valor;
+            $er = new Er();
+        
+        if ( !$er->valida_texto(trim($valor)) ){
+            $this->errores[] = "Estos agradecimientos  no son validos";
+        }
+        else{
+            $this->agradecimientos = trim($valor);
+        }
         
     }
 
@@ -204,7 +253,14 @@ class Articulo extends Modelo{
 
     public function set_referencias($valor){
 
-            $this->referencias = $valor;
+            $er = new Er();
+        
+        if ( !$er->valida_texto(trim($valor)) ){
+            $this->errores[] = "Estas referencias  no es valido";
+        }
+        else{
+            $this->referencias = trim($valor);
+        }
         
     }    
 

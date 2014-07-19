@@ -80,6 +80,28 @@ class Er {
 		}
 	}
 
+	
+
+	public function valida_texto($valor)
+	{	
+		$exp_reg = "/^([a-zA-Z0-9_,.]|[[:blank:]]){15,200}$/";
+		if (preg_match($exp_reg,$valor) ) {
+		return true;
+		}else{
+		return false;
+		}
+	}
+
+	public function valida_clave($valor)
+	{	
+		$exp_reg = "/^[a-zA-Z0-9_]{4}$/";
+		if (preg_match($exp_reg,$valor) ) {
+		return true;
+		}else{
+		return false;
+		}
+	}
+
 	public function valida_img($valor)
 	{	
 		

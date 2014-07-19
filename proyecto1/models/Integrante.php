@@ -50,9 +50,12 @@ class Integrante extends Modelo{
         if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Este nombre (".$valor.") le faltan o le sobran caracteres (2-30 caracteres)";
         }
+        else{
+                   $this->nombre = trim($valor);
+ 
+        }
 
         
-        $this->nombre = trim($valor);
         
     }
 
@@ -68,8 +71,8 @@ class Integrante extends Modelo{
             $this->errores[] = "Este apellido (".$valor.") le faltan o le sobran caracteres (2-30 caracteres)";
         }
 
+        else{$this->apellido = trim($valor);}
         
-        $this->apellido = trim($valor);
         
     }
     
@@ -79,14 +82,15 @@ class Integrante extends Modelo{
 
     public function set_peso($valor){
 
-        /*$er = new Er();
+        $er = new Er();
         
-        if ( !$er->valida_peso($valor) ){
-            $this->errores[] = "Este peso (".$valor.") no cumple el formato xx.xx";
-        }*/
-
-        
-        $this->peso = trim($valor);
+        if ( !$er->valida_doub(trim($valor)) ){
+            $this->errores[] = "Este peso (".$valor.") no es aceptable";
+        }
+        else
+        {
+            $this->peso = trim($valor);
+        }
         
     }
 
@@ -96,14 +100,18 @@ class Integrante extends Modelo{
 
     public function set_estatura($valor){
 
-        /*$er = new Er();
+        $er = new Er();
         
-        if ( !$er->valida_estatura($valor) ){
-            $this->errores[] = "Esta estatura (".$valor.") no cumple el formato xx.xx";
-        }*/
+        if ( !$er->valida_doub(trim($valor)) ){
+            $this->errores[] = "Esta estatura (".$valor.") no es aceptable";
+        }
+        else
+        {
+            $this->estatura = trim($valor);
+        }
 
         
-        $this->estatura = trim($valor);
+        
         
     }
 
@@ -139,7 +147,7 @@ class Integrante extends Modelo{
 
         $er = new Er();
         
-        if ( !$er->valida_id($valor) ){
+        if ( !$er->valida_id(trim($valor) )){
             $this->errores[] = "Numero de equipo no valido";
         }
         else {
@@ -159,7 +167,7 @@ class Integrante extends Modelo{
 
         $er = new Er();
         
-        if ( !$er->valida_id($valor) ){
+        if ( !$er->valida_edad(trim($valor)) ){
             $this->errores[] = "Edad invalidad";
         }
 

@@ -7,18 +7,17 @@
   include ('../../controllers/RevistaController.php');
   include ('../../libs/Er.php');
   include ('../layouts/header.php');
-
+  $clase=new RevistaController();
   if (isset($_POST['nombre'])){
   	
-  	$revistaC=new RevistaController();
-  	$revistaC->insertaRevista($_POST,$_FILES);
+  	
+  	$clase->insertaRevista($_POST,$_FILES);
 }
 ?>
-
+	
 
       <div class="jumbotron">
         <h1>Revista</h1>
-        <p>Click para abrir el formulario para el registro de la revista</p>
       </div>
 
       <br /><br /><br />
@@ -28,15 +27,19 @@
 		<div class="col-md-3">
 		</div>
 		<div class="col-md-6" align="center">
+				<?php include "../funcion.php" ?>
+
 		  <form role"form" action="" method="POST" enctype="multipart/form-data">
 		    
 		    <label for="nombre">Nombre</label>
 		    <br>
-		    <input type="text" id="nombre" name="nombre" class="txt" size="60">
+		    <input type="text" id="nombre" name="nombre" class="txt" size="60" value="
+			<?php echo $clase->get_nombre(); ?>">
 		    <br>
 		    <label for="portada">Portada</label>
 		    <br>
-		    <input type="file" id="portada" name="portada" class="txt" size="60">
+		    <input type="file" id="portada" name="portada" class="txt" size="60" value="
+			<?php echo $clase->get_portada(); ?>">
 		    <br>
 		    <br>
 		    	<label for="fecha">Fecha</label>
@@ -44,38 +47,48 @@
                 <div class='input-group date' id='datetimepicker1' align="center">
                 	
                 	<br>
-                    <input type='text' class="form-control" id="fecha_creacion" name="fecha" size="60"/>
+                    <input type='text' class="form-control" id="fecha_creacion" name="fecha" size="60"/ value="
+			<?php echo $clase->get_fecha(); ?>">
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                     </span>
                 </div>
             <br>    
             <label for="volumen">Volumen</label>
 		    <br>
-		    <input type="text" id="volumen" name="volumen" class="txt" size="60">
+		    <input type="text" id="volumen" name="volumen" class="txt" size="60" value="
+			<?php echo $clase->get_volumen(); ?>">
 		    <br>
 		    <label for="titulo">Titulo</label>
 		    <br>
-		    <input type="text" id="titulo" name="titulo" class="txt" size="60">
+		    <input type="text" id="titulo" name="titulo" class="txt" size="60" value="
+			<?php echo $clase->get_titulo(); ?>">
 		    <br>
 		    <label for="subtitulo">Subtitulo</label>
 		    <br>
-		    <input type="text" id="subtitulo" name="subtitulo" class="txt" size="60">
+		    <input type="text" id="subtitulo" name="subtitulo" class="txt" size="60" value="
+			<?php echo $clase->get_subtitulo(); ?>">
 		    <br>
 		    <label for="numero">Numero</label>
 		    <br>
-		    <input type="text" id="numero" name="numero" class="txt" size="10">
+		    <input type="text" id="numero" name="numero" class="txt" size="10" value="
+			<?php echo $clase->get_numero(); ?>">
 		    <br>
 		    <label for="clave">Clave</label>
 		    <br>
-		    <input type="text" id="clave" name="clave" class="txt" size="60">
+		    <input type="text" id="clave" name="clave" class="txt" size="60" value="
+			<?php echo $clase->get_clave(); ?>">
 		    <br>
 		    <label for="directorio">Directorio</label>
 		    <br>
-		    <textarea rows="4" cols="60" id="directorio" name="directorio"></textarea>
+		    <textarea rows="4" cols="60" id="directorio" name="directorio" >
+		    	<?php echo htmlspecialchars($_POST['directorio']);?>
+		    </textarea>
 		    <br>
 		    <label for="editorial">Editorial</label>
 		    <br>
-		    <textarea rows="4" cols="60" id="editorial" name="editorial"></textarea>
+		    <textarea rows="4" cols="60" id="editorial" name="editorial">
+		    	<?php echo htmlspecialchars($_POST['editorial']);?>
+			</textarea>
 		    <br>
 		    <label for="id_status">Status</label>
 		    <br>
